@@ -1,0 +1,249 @@
+{{extend 'layout_b.html'}}
+<style type="text/css">
+  .divl{
+    position: absolute; top: 0px; left: 0;
+
+  }
+  .secondary_banner {
+   width: 100%; height: 350px; text-align: center;
+   background: rgba(246,246,246,1);
+background: -moz-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(59,77,93,1) 80%, rgba(43,62,80,1) 87%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(246,246,246,1)), color-stop(80%, rgba(59,77,93,1)), color-stop(87%, rgba(43,62,80,1)));
+background: -webkit-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(59,77,93,1) 80%, rgba(43,62,80,1) 87%);
+background: -o-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(59,77,93,1) 80%, rgba(43,62,80,1) 87%);
+background: -ms-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(59,77,93,1) 80%, rgba(43,62,80,1) 87%);
+background: linear-gradient(to bottom, rgba(246,246,246,1) 0%, rgba(59,77,93,1) 80%, rgba(43,62,80,1) 87%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#2b3e50', GradientType=0 );
+
+
+   overflow: hidden; 
+  }
+</style>
+
+<nav class="collapse navbar-collapse navbar-fixed-top" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right " style="padding-right:90px;">
+        <li class="page-scroll">
+            <a id="up" href="#page-top" style="color:#7B8491;">Ir Arriba</a>
+        </li>
+        
+    </ul>
+</nav>
+
+<div class="divl secondary_banner">
+<div style="top:10%;" class="navbar navbar-success navbar-default">
+          <div style="padding-left:8%;" class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button><br>
+            
+            
+            <a class="navbar-brand" href="{{=URL('default','index',args=['nav'])}}">Antioquía Calvary Chapel</a>
+            <a class="hidden-xs hidden-sm hidden-md" style="padding-right:70%;"  href="{{=URL('default','index', args=['nav'])}}"><img src="{{=URL('static/images','dove_.png')}}" alt="..."></a>
+          </div>
+          <div align="left" style="padding-left:9%;" class="navbar-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="{{=URL('default','index',args=['nav'])}}"><i class="fa fa-home fa-2x"></i></a></li>
+              <li><a href="{{=URL('default','QuienesSomos')}}" style="color:#5CB85C; font-size:17px;"><strong> Quiénes Somos</strong></a></li>
+              <li><a href="{{=URL('default','DondeEstamos')}}" style="color:#5CB85C; font-size:17px;">Dónde Estamos</a></li>
+              <li><a href="{{=URL('default','Creemos')}}" style="color:#5CB85C; font-size:17px;">En qué Creemos</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#5CB85C; font-size:17px;">Ministerios</a>
+                <ul class="dropdown-menu">
+                  <li><a href="{{=URL('default','CasaAbierta')}}" style="font-size:15px;">Centro Comunitario Casa Abierta</a></li>
+                  <li><a href="{{=URL('default','EstudiosBiblicos')}}"style="font-size:15px;">Estudios Bíblicos en Casa</a></li>
+                  <li><a href="{{=URL('default','web')}}"style="font-size:15px;" >Desarrollo Web</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#5CB85C; font-size:17px;">Recursos</a>
+                <ul class="dropdown-menu">
+                  <li><a href="{{=URL('default','imagenes')}}" style="font-size:15px;">Imágenes</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#" style="font-size:15px;" data-toggle="modal" data-target="#ModalIglesias">Iglesias en Sonora</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#ModalBiblias" style="font-size:15px;">Biblias en Linea</a></li>
+                  <li class="divider"></li>
+                  <li><a href="http://www.calvarychapel.com" target="_blank" style="font-size:15px;">Calvary Chapel</a></li>
+                  <li><a href="http://www.ibccmexico.com/tablet/index.html" target="_blank" style="font-size:15px;">Insituto Bíblico Capilla Calvario México</a></li>
+                  
+                </ul>
+              </li>
+
+              <li><a href="{{=URL('default','PazConDios')}}" target="_blank" style="color:#EA3636; font-size:17px;">Ten Paz Con Dios</a></li>
+              <li ><a href="#" style="color:#5CB85C; font-size:17px;" data-toggle="modal" data-target="#ModalDonar">Donar</a></li>
+            </ul>
+            
+            <ul style="padding-right:9%;" class="nav navbar-nav navbar-right">
+              <li><a href="{{=URL('default','index',args=['nav'])}}"><img class="center-block" src="{{=URL('static/images','es_.png')}}" alt="..."></a></li>
+              <li><a href="{{=URL('default','index_en')}}"><img class="center-block" src="{{=URL('static/images','en_.png')}}" alt="..."></a></li>
+            </ul>
+          </div>
+        </div>
+</div>
+
+<div class="container-fluid" id="main">
+  <div class="row-fluid">
+    <div class="col-md-1 hidden-xs hidden-sm" style="background-color:rgba(153,54,51,0.90);">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div class="col-md-1 hidden-xs hidden-sm">
+    <div class="col-md-6" style="background-color:#54647B;">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    </div>
+    
+    <div class="col-md-10" name="hola">
+      <div class="row">
+      <div class="col-md-8">
+      <h1>Centro Comunitario Casa Abierta</h1></div>
+      <div class="col-md-4 hidden-xs hidden-sm" align="right">
+      <img style="padding-left:0px;" src="{{=URL('static/images','casa_.png')}}" alt="..." class="img-rounded img-responsive"></div>
+      </div>
+      <hr><br>
+        <ul class="nav nav-tabs">
+        <li class="active"><a href="#ejecutivas" data-toggle="tab">Acciones Ejecutivas</a></li>
+        <li class=""><a href="#ayudah" data-toggle="tab" >Acciones de Ayuda Humanitaria</a></li>
+        <li class=""><a href="#motivos" data-toggle="tab">Motivos de Oración</a></li>
+        <li class="" data-toggle="modal" data-target="#ModalImgs"><a><i class="fa fa-lg fa-picture-o"></i>&nbsp; Imágenes</a> </li>
+        <li class="" data-toggle="modal" data-target="#ModalRpt"><a><i class="fa fa-lg fa-file-text"></i>&nbsp; Reportes</a> </li>
+        
+      </ul>
+      <hr>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="ejecutivas">
+          <div class="alert alert-dismissable alert-success">
+            <h4>“Por tanto, vayan y hagan discípulos de todas las naciones, enseñándoles a obedecer todo lo que les he mandado a ustedes.”&nbsp;&nbsp;MATEO 28:19-20</h4>
+          </div>
+          
+           <h4 style="text-align:center">Llevando palabra de esperanza a la comunidad</h4> <br>
+            <blockquote>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-long-arrow-right"></i> Escuela bíblica: clases para niños, adolescentes, jóvenes y adultos.<br></h5>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-long-arrow-right"></i> Consejería bíblica familiar: para fomentar la armonía familiar.<br></h5>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-long-arrow-right"></i> Consejería para matrimonios: a fin de evitar el quebranto del matrimonio y promover el hogar cristiano.<br></h5>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-long-arrow-right"></i> Pláticas sobre roles y responsabilidades de los miembros de la familia, como familia y como miembro.<br></h5>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-long-arrow-right"></i> Estrategias de evangelismo: diseño de estrategias prácticas y llevar acciones evangelísticas, que permitan el encuentro con Jesús y así fomentar y aumentar la fe en Jesús.<br></h5>
+              <h5 align="justify">   
+                <i class="fa fa-2x fa-long-arrow-right"></i> Convivencia bíblica infantil recreativa: realizar eventos infantiles con el fin de crear un club de niños que fomente la relación del niño con Jesús y reconozca el amor de dios en sus vidas.<br></h5>
+              <h5 align="justify">   
+                <i class="fa fa-2x fa-long-arrow-right"></i> Convivencia bíblica de matrimonios, varones y mujeres: realizar eventos para adultos que les permita conocer otra alternativa de distracción sin los ponderantes del mundo y puedan invitar a Jesús a sus corazones.<br></h5>
+              <h5 align="justify">   
+                <i class="fa fa-2x fa-long-arrow-right"></i> Recreación a través de películas cristianas y seculares de comedia sana, que les permita la diversión familiar en un ambiente que exprese el amor de Dios y fomente la unión familiar.<br></h5>
+              <h5 align="justify">   
+                <i class="fa fa-2x fa-long-arrow-right"></i> Canalizar a aquellas personas que entreguen su vida a Cristo, hacia la iglesia, donde encontrarán el amor de Dios en la familia espiritual.<br></h5>
+            </blockquote>
+
+        </div>
+        <div class="tab-pane fade" id="ayudah">
+          <div class="alert alert-dismissable alert-danger">
+            <h4>“Porque somos hechura de Dios, creados en Cristo Jesús para buenas obras, las cuales Dios dispuso de antemano a fin de que las pongamos en práctica”&nbsp;&nbsp;EFESIOS 2:10</h4>
+          </div>
+          
+          <blockquote>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-long-arrow-right"></i> Asesoría profesional: laboral, penal, civil, familiar, y las que se deriven de la problemática real de vida de la comunidad afín de facilitar la vida diaria de las familias.<br></h5>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-long-arrow-right"></i> Asesoría en la obtención, posesión y guarda de documentos oficiales: vitales para una vida personal y familiar.<br></h5>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-long-arrow-right"></i> Asesoría de orientación y canalización hacia las autoridades competentes: para dar solución a su problemática de vida.<br></h5>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-long-arrow-right"></i> Asesoría en la higiene y salud familiar: facilitando el acceso a los distintos medios y fundaciones que puedan atender en su conjunto al entorno de higiene y salud de la familia, al menor costo posible.<br></h5>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-long-arrow-right"></i> Asesoría académica: que permita a los niños de educación primaria y secundaria regularizarse en aquellas materias que han tenido dificultad de aprendizaje.<br></h5>
+              <h5 align="justify">   
+                <i class="fa fa-2x fa-long-arrow-right"></i> Pláticas y asesoría en la detección temprana de adicciones: como el alcoholismo, el cigarro y las drogas, canalizándolos a centros de rehabilitación.<br></h5>
+              <h5 align="justify">   
+                <i class="fa fa-2x fa-long-arrow-right"></i> Pláticas y orientación para evitar las relaciones sexuales fuera del matrimonio: y evitar el producto de ellas como las enfermedades y embarazos.<br></h5>
+              <h5 align="justify">   
+                <i class="fa fa-2x fa-long-arrow-right"></i> Fomentar equipos de futbol rápido, u otro deporte: como alternativa recreativa, que les sirvan como distractores de las adicciones y vicios del mundo.<br></h5>
+              <h5 align="justify">   
+                <i class="fa fa-2x fa-long-arrow-right"></i> Actividades y celebraciones de fechas especiales que fomenten el compañerismo y la recreación: que les permita momentos de distracción en medio de su situación de vida.<br></h5>
+              <h5 align="justify">   
+                <i class="fa fa-2x fa-long-arrow-right"></i> Capacitación de oficios: como costura, cocina, mecánica, bordados, manualidades y otros que les permitan un ingreso extra a su economía familiar.<br></h5>
+            </blockquote>
+        </div>
+        
+        <div class="tab-pane fade" id="motivos">
+          <div class="alert alert-dismissable alert-info">
+            <h4>"Clama a mí, y yo te responderé, y te enseñaré cosas grandes y ocultas que tú no conoces."&nbsp;&nbsp;Jeremias 33:3</h4>
+          </div>
+          
+          <blockquote>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-hand-o-up"></i> 1.– El centro se llama "CASA ABIERTA"  a una vida de calidad. Oremos para que el testimonio de Casa Abierta, sirva para atraer a la gente a un encuentro con Jesús y que Dios los capacite para llevar una vida de calidad<br></h5>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-hand-o-up"></i> 2.- Oremos para que Dios fluya las finanzas para la renta y mobiliario y equipo para acondicionar la casa, donde se desarrollan las acciones de CASA ABIERTA<br></h5>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-hand-o-up"></i> 3.- Ya tenemos el contacto con el centro de Salud del gobierno y ellos nos apoyaran con el camión de análisis clínicos para mujeres cuando lo solicitemos, también con conferencias sobre higiene personal y familiar. Oremos para que se fortalezca la relación y se aproveche el apoyo.<br></h5>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-hand-o-up"></i> 4.– Hay una pareja de hermanos en la fe en Jesús que están apoyando con un médico al mes y un cuadro de medicinas más amplio para que se ataquen un mayor número de enfermedades. Oremos por ellos para que Dios los prospere espiritual y físicamente y los materialmente.<br></h5>
+              <h5 align="justify">
+                <i class="fa fa-2x fa-hand-o-up"></i> 5.– Necesitamos llevar conferencias sobre adicciones, sexualidad y de lo que necesiten los jóvenes para una mejor calidad de vida aun en su entorno de vida. Oremos para que el Dios provea de los conferencistas e instituciones que apoyen esta acción.<br></h5>
+              <h5 align="justify">   
+                <i class="fa fa-2x fa-hand-o-up"></i> 6.- Estamos buscando contacto con la Secretaria de Educación y Cultura (SEC) del estado de Sonora para que nos apoyen en la inscripción y seguimiento de niños en la escuela y también en la alfabetización de la comunidad y la enseñanza abierta. Oremos por para que Dios abra las puertas de la SEC y del instituto de educación abierta para preparar a los niños y no pierdan un año de educación escolar.<br></h5>
+              <h5 align="justify">   
+                <i class="fa fa-2x fa-hand-o-up"></i> 7.– En la ESCUELA BÍBLICA CASA ABIERTA ya tenemos una matricula de 20 adultos, 6 jóvenes adolescentes y 30 niños de 4 años hasta 10 años. Oremos por los maestros, y porque Dios provea de mobiliario y equipo, actualmente las clases se realizan con los niños sentados en el suelo.<br></h5>
+              
+            </blockquote>
+        </div>
+        
+      </div><br>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ModalRpt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Reportes Centro Comunitario Casa Abierta</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="{{=URL('static','rpt_casaabierta13.pdf?attachment')}}" class="btn btn-lg btn-outline" style="color:#ccc" onMouseOver="this.style.color='#6C6CE4'" onMouseOut="this.style.color='#ccc'">
+                    <i class="fa fa-download"></i>&nbsp;Descargar<br>Reporte 2013
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="{{=URL('static','rpt_casaabierta13.pdf')}}" target='_blank' class="btn btn-lg btn-outline" style="color:#ccc" onMouseOver="this.style.color='#6C6CE4'" onMouseOut="this.style.color='#ccc'">
+                    <i class="fa fa-cloud"></i>&nbsp;Ver en Linea<br>Reporte 2013
+                </a>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade bs-example-modal-lg" id="ModalImgs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Centro Comunitario Casa Abierta</h4>
+      </div>
+      <div class="modal-body">
+        
+        {{=LOAD( url=URL(a='imgs', c='default', f='casaabierta', user_signature=True), ajax=True, content= IMG(_src=URL(request.application,'static','images/301.GIF')) )}}
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
