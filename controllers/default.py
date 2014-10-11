@@ -201,6 +201,7 @@ def BibleStudies():
 
 @auth.requires_membership('admin')
 def admin():
+    visits = db().select(db.visitas.visits).first()
     form_versos = SQLFORM.grid(db.versos_biblicos)
     response.files.append(URL(r=request,c='static/jquery.jqGrid/js/i18n',f='grid.locale-es.js'))
     response.files.append(URL(r=request,c='static/jquery.jqGrid/js/minified',f='jquery.jqGrid.min.js'))
@@ -209,6 +210,20 @@ def admin():
     response.files.append(URL(r=request,c='static/css/themes/smoothness',f='jquery-ui.css'))
     response.files.append(URL(r=request,c='static/css/themes/smoothness',f='jquery.ui.theme.css'))
     return locals()
+
+@auth.requires_membership('admin')
+def reset_visits():
+  db(db.visitas.id==1).update(visits=0)
+  redirect(URL('default','admin'))
+
+@auth.requires_membership('admin')
+def dec_visits():
+  if request.args(0):
+    menos = int(request.args(0))
+    visits = db().select(db.visitas.visits).first()
+    nuevo = int(visits.visits) - menos
+    db(db.visitas.id==1).update(visits=nuevo)
+  redirect(URL('default','admin'))
 
 @service.json
 def get_rows():
