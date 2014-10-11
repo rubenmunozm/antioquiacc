@@ -1,4 +1,4 @@
-# coding: utf-8
+# -*- coding: utf-8 -*-
 {
 '!=': '!=',
 '!langcode!': 'es',
@@ -155,6 +155,7 @@
 'Email sent': 'Correo electrónico enviado',
 'enter a number between %(min)g and %(max)g': 'introduzca un número entre %(min)g y %(max)g',
 'enter a value': 'enter a value',
+'Enter an integer between %(min)g and %(max)g': 'Enter an integer between %(min)g and %(max)g',
 'enter an integer between %(min)g and %(max)g': 'introduzca un entero entre %(min)g y %(max)g',
 'enter from %(min)g to %(max)g characters': 'enter from %(min)g to %(max)g characters',
 'Error logs for "%(app)s"': 'Bitácora de errores en "%(app)s"',
