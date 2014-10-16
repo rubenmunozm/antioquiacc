@@ -90,12 +90,15 @@ a {
 	color: #fff;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
+	transition: all .3s ease-in-out;
 }
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-	color: #f0f0f0;
-	text-decoration: none;
+	color: #ebebeb;
+	font-size: 60px; /*!!!*/
+	text-decoration: none; /*!!!*/
+	transition: all .3s ease-in-out; /**/
 }
 
 /* Effects */
@@ -121,7 +124,7 @@ a {
 
 .overlay-boxes svg path {
 	/*(53,104,151,0.90)  azul padre*/
-	fill: rgba(153,54,51,0.90);
+	fill: rgba(153,54,51,0.92);
 	display: none;
 }
 

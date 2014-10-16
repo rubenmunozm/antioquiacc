@@ -115,7 +115,7 @@ margin: 0 auto;
 
     {{
        response.files.insert(0,URL('static','css/web2py.css'))
-       response.files.insert(1,URL('static','css/bootstrap.min.css'))
+       response.files.insert(1,URL('static','css/bootstrap.css'))
        response.files.insert(2,URL('static','css/web2py-bootstrap3-b.css'))
     }}
 
@@ -150,12 +150,12 @@ margin: 0 auto;
           </div>
           <div class="navbar-collapse collapse navbar-inverse-collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="{{=URL('default','index_en', args=['nav'])}}"><i class="fa fa-home fa-2x"></i></a></li>
-              <li><a href="{{=URL('default','AboutUs')}}" style="color:#5CB85C; font-size:17px;"><strong> About Us</strong></a></li>
-              <li><a href="{{=URL('default','Locations')}}" style="color:#5CB85C; font-size:17px;">Locations</a></li>
-              <li><a href="{{=URL('default','Beliefs')}}" style="color:#5CB85C; font-size:17px;">What we believe</a></li>
+              <li class="active"><a style="font-size:15px" href="{{=URL('default','index_en', args=['nav'])}}"><i class="fa fa-home fa-2x"></i></a></li>
+              <li><a href="{{=URL('default','AboutUs')}}">About Us</a></li>
+              <li><a href="{{=URL('default','Locations')}}">Locations</a></li>
+              <li><a href="{{=URL('default','Beliefs')}}">What we believe</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#5CB85C; font-size:17px;">Ministries</a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ministries</a>
                 <ul class="dropdown-menu">
                   <li><a href="{{=URL('default','CasaAbierta_en')}}" style="font-size:15px;">Casa Abierta Community Center</a></li>
                   <li><a href="{{=URL('default','BibleStudies')}}"style="font-size:15px;">Bible Study Groups @ Home</a></li>
@@ -163,7 +163,7 @@ margin: 0 auto;
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#5CB85C; font-size:17px;">Resources</a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
                 <ul class="dropdown-menu">
                   <li><a href="{{=URL('default','photos')}}" style="font-size:15px;">Photos</a></li>
                   <li class="divider"></li>
@@ -176,8 +176,8 @@ margin: 0 auto;
                 </ul>
               </li>
 
-              <li><a href="{{=URL('default','PeaceWithGod')}}" target="_blank" style="color:#EA3636; font-size:17px;">Have Peace With God</a></li>
-              <li><a href="#" style="color:#5CB85C; font-size:17px;" data-toggle="modal" data-target="#ModalDonar">Donate</a></li>
+              <li><a href="{{=URL('default','PeaceWithGod')}}" target="_blank" style="color:#FD3D36;font-size:18px"> Have Peace With God</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#ModalDonar">Donate</a></li>
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
