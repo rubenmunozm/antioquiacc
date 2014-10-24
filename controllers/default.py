@@ -199,6 +199,12 @@ def EstudiosBiblicos():
 def BibleStudies():
   return locals()
 
+def tiendita():
+  return locals()
+
+def tiendita_en():
+  return locals()
+
 @auth.requires_membership('admin')
 def admin():
     visits = db().select(db.visitas.visits).first()

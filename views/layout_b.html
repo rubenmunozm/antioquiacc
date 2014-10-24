@@ -162,6 +162,7 @@ margin: 0 auto;
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ministerios</a>
                 <ul class="dropdown-menu">
                   <li><a href="{{=URL('default','CasaAbierta')}}" style="font-size:15px;">Centro Comunitario Casa Abierta</a></li>
+                  <li><a href="{{=URL('default','tiendita')}}" style="font-size:15px;">La Tiendita</a></li>
                   <li><a href="{{=URL('default','EstudiosBiblicos')}}"style="font-size:15px;">Estudios Bíblicos en Casa</a></li>
                   <li><a href="{{=URL('default','web')}}"style="font-size:15px;" >Desarrollo Web</a></li>
                 </ul>
@@ -209,32 +210,33 @@ margin: 0 auto;
         <br>
            
           <div class="row-fluid">
-              <div class="col-md-10 col-md-offset-1">
-                    <div class="col-md-9 col-md-offset-2">
+              <div class="col-md-8 col-md-offset-2">
+                    
                         
-                        <div class="col-md-4 center-block">
+                        <div class="col-md-4 center-block" align="center">
                           <button type="button" class="btn btn-default">Acerca De &nbsp;<i class="fa fa-long-arrow-right"></i></button><br>
                           <button onclick="location.href='{{=URL('default','QuienesSomos')}}'" type="button" class="btn btn-link" style="color:white;">- Quiénes Somos</button><br>
                           <button onclick="location.href='{{=URL('default','DondeEstamos')}}'" type="button" class="btn btn-link" style="color:white;">- Dónde Estamos</button><br>
                           <button onclick="location.href='{{=URL('default','Creemos')}}'" type="button" class="btn btn-link" style="color:white;">- En qué Creemos</button><br>
                           <button data-toggle="modal" data-target="#ModalHorarios" type="button" class="btn btn-link" style="color:white;">- Horarios</button><br>
                         </div>
-                        <div class="col-md-4 center-block">
+                        <div class="col-md-4 center-block" align="center">
                           <button type="button" class="btn btn-default">Recursos &nbsp;<i class="fa fa-long-arrow-right"></i></button><br>
                           <a href='{{=URL('default','PazConDios')}}' target="_blank" type="button" class="btn btn-link" style="color:white;">- Conoce a Jesús</a><br>
                           <button onclick="location.href='{{=URL('default','imagenes')}}'" type="button" class="btn btn-link" style="color:white;">- Imágenes</button><br>
                           <button data-toggle="modal" data-target="#ModalBiblias" type="button" class="btn btn-link" style="color:white;">- Biblia</button><br>
                           <button data-toggle="modal" data-target="#ModalIglesias" type="button" class="btn btn-link" style="color:white;">- Iglesias</button><br>
                         </div>
-                        <div class="col-md-4 center-block">
+                        <div class="col-md-4 center-block" align="center">
                           <button type="button" class="btn btn-default">Ministerios &nbsp;<i class="fa fa-long-arrow-right"></i></button><br>
                           
                           <button onclick="location.href='{{=URL('default','CasaAbierta')}}'" type="button" class="btn btn-link" style="color:white;">- Centro Comunitario Casa Abierta</button><br>
+                          <button onclick="location.href='{{=URL('default','tiendita')}}'" type="button" class="btn btn-link" style="color:white;">- La Tiendita</button><br>
                           <button onclick="location.href='{{=URL('default','EstudiosBiblicos')}}'" type="button" class="btn btn-link" style="color:white;">- Estudios en Casa</button><br>
                           <button onclick="location.href='{{=URL('default','web')}}'" type="button" class="btn btn-link" style="color:white;">- Desarrollo Web</button><br>
-                          <button onclick="location.href='{{=URL('default','donar')}}'" type="button" class="btn btn-link" style="color:white;">- Donar</button><br>
+                          
                         </div>
-                    </div>
+                    
                     
               </div>
           </div> 
