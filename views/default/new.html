@@ -1,0 +1,72 @@
+{{extend 'layout_en.html'}}
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="{{=URL('static','js/slimbox2.js')}}"></script>	
+<link rel="stylesheet" href="{{=URL('static','css/slimbox2.css')}}" type="text/css" media="screen" />
+
+<div class="container-fluid">
+	<div class="col-md-2 hidden-sm hidden-xs" style="background-color:#4e5d6c;right:15px">	
+	<h4 style="padding-top:10px">Latest News:</h4>
+	<ul class="list-group" >
+		{{if rows:}}
+            {{for row in rows:}}
+			    <li class="list-group-item" style="cursor:pointer" onclick="abrir('{{=URL('default','new',vars={'id':row.id})}}')">
+			    	<i style="color:white;" class="fa fa-newspaper-o"></i>
+			    	&nbsp;{{=row.titulo}}
+			    	<i style="color:#5CA45A;" class="fa fa-sign-in fa-lg"></i>
+			    </li>
+			    <li class="list-group-item" style="border-bottom: 2px solid rgba(0, 0, 0, 0.2);">
+			    	<small>{{=row.fecha}}</small>
+			    </li>
+			{{pass}}
+		{{else:}}
+			<li class="list-group-item">
+			    	<i style="color:white;" class="fa fa-newspaper-o"></i>
+			    	&nbsp;No news
+			    	<i style="color:#5CA45A;" class="fa fa-sign-in fa-lg"></i>
+			    </li>
+			    <li class="list-group-item" style="border-bottom: 2px solid rgba(0, 0, 0, 0.2);">
+			    	<small>-</small>
+			    </li>
+		{{pass}}
+	</ul>
+		
+	</div>
+	<div class="col-md-10" style="background-color:#ebebeb;border-radius: 3px;">
+		{{if noticia:}}
+			<div class="col-md-6">
+				<h2 style="color:#2b3e50;padding-top:20px">{{=noticia.titulo}}</h2>
+			</div>
+			<div class="col-md-6" align="right">
+				<a href="{{=URL('default','news')}}"><h5 style="color:#2b3e50" >Back to News&nbsp;<i class="fa fa-undo"></i></h5></a>
+			</div>
+			
+			<div class="col-md-7">
+			  <p style="font-size:17px;color:#2b3e50">{{=noticia.texto}}</p>
+			  <i style="color:#2b3e50">{{=noticia.fecha}}</i>
+			</div>
+			<div class="col-md-5">
+			  	{{if noticia.imagen:}} 
+			  		<a href="{{=URL('download',args=noticia.imagen)}}" rel='lightbox_thispage' title="{{=noticia.resumen}}"><img class="img-rounded img-responsive" src="{{=URL('download',args=noticia.imagen)}}" ></a>
+                  	<br>
+                {{pass}} 
+			</div>
+		{{else:}}
+			<div class="col-md-12"><h2 style="color:#2b3e50">-</h2>
+			</div>
+			
+			<div class="col-md-7">
+			  <p style="font-size:17px;color:#2b3e50">No news.</p>
+			</div>
+			<div class="col-md-5">
+			  	
+			</div>
+		{{pass}}
+
+	</div>
+</div><br>
+
+<script>
+function abrir(url) {
+    window.open(url,'_self');
+}
+</script>

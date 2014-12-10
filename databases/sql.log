@@ -96,3 +96,14 @@ CREATE TABLE visitas(
     visits INTEGER
 );
 success!
+timestamp: 2014-12-05T04:39:44.811000
+CREATE TABLE noticias(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    titulo CHAR(512) NOT NULL,
+    resumen TEXT NOT NULL,
+    texto TEXT,
+    imagen CHAR(512),
+    fecha CHAR(20)
+);
+success!
+success!

@@ -123,8 +123,8 @@ a {
 }
 
 .overlay-boxes svg path {
-	/*(53,104,151,0.90)  azul padre*/
-	fill: rgba(153,54,51,0.92);
+	/*(153,54,51,0.92)  rojo anterior*/
+	fill: rgba(7,24,71,0.92);
 	display: none;
 }
 

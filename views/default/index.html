@@ -222,21 +222,16 @@ box-shadow: 0px 0px 23px 0px rgba(22,3,31,0.84);
     </a>
 </div>
 
-
-<div class="container-fluid">
-  <div class="row-fluid" id="meet">
-      <div class="col-md-8">
-      <div class="page-header">
-                    <h1 id="container">Conócenos</h1>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="container-fluid">
   <div class="row-fluid">
     
     <div class="col-md-8"> <!--Abro div para columna izquierda -->
+      <div class="container-fluid" id="meet">
+        <div class="page-header" >
+          <h1 id="container">Conócenos</h1>
+        </div>  
+      </div>    
+
       <div class="col-md-12 hola">
         <br>
           <ul class="nav nav-tabs blue" style="margin-bottom: 15px;">
@@ -347,7 +342,7 @@ box-shadow: 0px 0px 23px 0px rgba(22,3,31,0.84);
           </div> 
       </div>
 
-      <br><br>
+      
       <div class="col-md-12" id="contact">
         <div class="page-header">
                   <h1 id="container"><i class="fa fa-envelope-o fa-lg"></i>&nbsp; Contáctanos</h1>
@@ -355,9 +350,9 @@ box-shadow: 0px 0px 23px 0px rgba(22,3,31,0.84);
         </div>
       </div>
 
-      <div class="col-md-12">
-        <div class="row-fluid">
-                <div class="col-lg-8">
+      <div class="col-md-12" >
+        <div class="container-fluid">
+                <div class="col-lg-8"><br>
                     <!--para qu funcione el form se necesita lo que comentare -->
                     <form action="#" enctype="multipart/form-data" method="post"> <!--Esta linea-->
                         <div class="row control-group">
@@ -404,13 +399,75 @@ box-shadow: 0px 0px 23px 0px rgba(22,3,31,0.84);
             </div>
       </div>
       
+      <div class="col-md-12" id="visit">
+        <div class="page-header">
+          <h1 id="container"><i class="fa fa-map-marker fa-lg"></i>&nbsp; Visítanos</h1>
+        </div>  
+        
+        <div class="col-md-11">
+                <div class="map-container">
+                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBtl1u4nvhvl7Ei03TtG3l_U9_C0lpPf2A&q=1+211+Jesús+García+83140+Hermosillo,SON,México"></iframe>
+                </div><br>
+        </div>
+        <div class="col-md-12">
+              <address>
+                <strong>Antioquía Calvary Chapel</strong><br>
+                Avenida Uno #211<br>
+                Col. Jesús García<br>
+                Hermosillo, Sonora, México<br>
+              </address>
 
+              <address>
+                <strong>Pastor Rubén Muñoz</strong><br>
+                <a href="mailto:#">antioquiacalvarychapel@hotmail.com</a>
+              </address>
+        </div>
+      </div>
       
       
     </div> <!--Cierra div columna izquierda -->
-    <br>
+    
 
-    <div class="col-md-4" style="margin-top:-26px;"> <!-- Comienza div columna derecha-->
+
+    <div class="col-md-4" style="margin-top:6.5px;"> <!-- Comienza div columna derecha-->
+
+        <div class="page-header">
+          <a style="color:#5CB85C" href="{{=URL('default','noticias')}}"><h2><i class="fa fa-newspaper-o"></i>&nbsp; Noticias</h2></a>
+        </div>
+
+        <div class="panel panel-default">
+          {{if noticia:}}
+              <div class="panel-heading" align="">
+                  {{=noticia.titulo}}            
+              </div>
+              <div class="panel-body" align="justify">
+                {{if noticia.imagen:}}  
+                  {{=A(IMG(_src=URL('download',args=noticia.imagen),_rel="noshare", _class="img-rounded img-responsive"))}}<br>
+                {{pass}} 
+                {{=noticia.resumen}}&nbsp;  
+                  <a href="{{=URL('default','noticia', vars={'id':noticia.id})}}">Leer noticia completa&nbsp;&nbsp;<i class="fa fa-angle-double-right fa-lg"></i></a> 
+                                      
+              </div>
+              <div align="right" class="panel-footer">
+                  {{=noticia.fecha}}          
+              </div>
+
+          {{else:}}
+              <div class="panel-heading" align="">
+                  -            
+              </div>
+              <div class="panel-body" align="justify">
+                No hay noticias.
+                                      
+              </div>
+              <div align="right" class="panel-footer">
+                  -          
+              </div>
+          {{pass}}
+        </div>
+
+        <div class="page-header">
+        </div>
         
         <div align="right" style="padding-bottom:5px;">
           <a id="boton_refresh" href="#" data-toggle="tooltip" data-placement="left" title="Refrescar Versos Bíblicos"><i class="fa fa-spin fa-refresh"></i></a>
@@ -484,30 +541,7 @@ box-shadow: 0px 0px 23px 0px rgba(22,3,31,0.84);
     </div> <!-- Cierra div columna derecha -->
 
 
-    <div class="col-md-12" id="visit">
-        <div class="page-header">
-                  <h1 id="container"><i class="fa fa-map-marker fa-lg"></i>&nbsp; Visítanos</h1>
-        </div>  
-        
-        <div class="col-md-9">
-                <div class="map-container">
-                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBtl1u4nvhvl7Ei03TtG3l_U9_C0lpPf2A&q=1+211+Jesús+García+83140+Hermosillo,SON,México"></iframe>
-                </div><br>
-        </div>
-        <div class="col-md-3">
-              <address>
-                <strong>Antioquía Calvary Chapel</strong><br>
-                Avenida Uno #211<br>
-                Col. Jesús García<br>
-                Hermosillo, Sonora, México<br>
-              </address>
-
-              <address>
-                <strong>Pastor Rubén Muñoz</strong><br>
-                <a href="mailto:#">antioquiacalvarychapel@hotmail.com</a>
-              </address>
-        </div>
-    </div>
+   
 
 
   </div>

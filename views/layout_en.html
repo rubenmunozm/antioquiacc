@@ -139,7 +139,7 @@ margin: 0 auto;
       <!-- Fixed navbar -->
       <div class="container" style="padding-top:40px;">
         <div class="navbar navbar-success navbar-default">
-          <div class="navbar-header">
+          <div class="navbar-header col-lg-6">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -150,6 +150,13 @@ margin: 0 auto;
             <a class="navbar-brand" href="{{=URL('default','index_en', args=['nav'])}}">Antioquía Calvary Chapel</a>
 
           </div>
+          <div class="navbar-header col-lg-6">
+            <br>
+            
+            <a class="hidden-xs hidden-md hidden-sm pull-right" href="http://ibsinai.com" target="_blank" style="font-size:11.5px;color:white">Partner Church Sinaí</a>
+
+          </div>
+
           <div class="navbar-collapse collapse navbar-inverse-collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a style="font-size:15px" href="{{=URL('default','index_en', args=['nav'])}}"><i class="fa fa-home fa-2x"></i></a></li>
@@ -168,6 +175,7 @@ margin: 0 auto;
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
                 <ul class="dropdown-menu">
+                  <li><a href="{{=URL('default','news')}}" style="font-size:15px;">News</a></li>
                   <li><a href="{{=URL('default','photos')}}" style="font-size:15px;">Photos</a></li>
                   <li class="divider"></li>
                   <li><a href="#" style="font-size:15px;" data-toggle="modal" data-target="#ModalIglesias">Churches in Sonora</a></li>
@@ -296,10 +304,15 @@ margin: 0 auto;
           
           <tbody>
             
-            <tr class="success">
+            <tr class="active">
               <td>Antioquía Calvary Chapel</td>
               <td>Avenida Uno nº 211<br>Col. Jesús García 83140<br>Hermosillo, Sonora</td>
               <td>Pastor Rubén Muñoz<br>antioquiacalvarychapel@hotmail.com</td>
+            </tr>
+            <tr class="success">
+              <td><a href="http://ibsinai.com" target="_blank" style="font-size:14px;color:purple;">Iglesia Bautista Sinaí</a></td>
+              <td>Calle Mariano Escobedo #63<br>Entre Veracruz y Nayarit<br>Col. San Benito C.P 83190<br>Hermosillo, Sonora</td>
+              <td>Pastor Carlos Fong</td>
             </tr>
             <tr class="active">
               <td>Centro Cristiano Amor Fraternal</td>
