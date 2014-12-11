@@ -116,5 +116,5 @@ db.define_table('noticias',
     Field('resumen','text', length=500, notnull=True),
     Field('texto','text'),
     Field('imagen', 'upload'),
-    Field('fecha','string', length=20, notnull=True)
+    Field('fecha','string', length=20, notnull=True),
     )
