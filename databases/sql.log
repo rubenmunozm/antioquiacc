@@ -107,3 +107,13 @@ CREATE TABLE noticias(
 );
 success!
 success!
+timestamp: 2014-12-13T06:34:56.120000
+CREATE TABLE news(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    titulo CHAR(512) NOT NULL,
+    resumen TEXT NOT NULL,
+    texto TEXT,
+    imagen CHAR(512),
+    fecha CHAR(20) NOT NULL
+);
+success!

@@ -118,3 +118,11 @@ db.define_table('noticias',
     Field('imagen', 'upload'),
     Field('fecha','string', length=20, notnull=True),
     )
+
+db.define_table('news',
+    Field('titulo','string', notnull=True),
+    Field('resumen','text', length=500, notnull=True),
+    Field('texto','text'),
+    Field('imagen', 'upload'),
+    Field('fecha','string', length=20, notnull=True),
+    )

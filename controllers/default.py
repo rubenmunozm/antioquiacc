@@ -46,7 +46,7 @@ def index():
   return locals()
 
 def index_en():
-  noticia = db(db.noticias).select().last()
+  noticia = db(db.news).select().last()
   # if request.args(0):
   #     now = int(time.time())
   #     cakeToken = jwt.encode(
@@ -95,21 +95,21 @@ def noticias():
 
 def new():
   try:
-    noticia = db(db.noticias.id==request.vars.id).select().first()
+    noticia = db(db.news.id==request.vars.id).select().first()
   except Exception, e:
     pass
-  rows = db(db.noticias).select(db.noticias.id,db.noticias.titulo,db.noticias.fecha, orderby=~db.noticias.id, limitby=(0,5))
+  rows = db(db.news).select(db.news.id,db.news.titulo,db.news.fecha, orderby=~db.news.id, limitby=(0,5))
   return locals()
 
 def news():
-  noticia = db(db.noticias).select().last()
+  noticia = db(db.news).select().last()
   if not request.vars.start:
     ini=0
   else:
     ini=int(request.vars.start)
 
   fin=ini+4
-  rows = db(db.noticias).select(db.noticias.ALL, orderby=~db.noticias.id, limitby=(ini,fin))
+  rows = db(db.news).select(db.news.ALL, orderby=~db.news.id, limitby=(ini,fin))
   return locals()
 
 def web():
