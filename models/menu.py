@@ -12,9 +12,9 @@
 response.subtitle = ''
 
 ## read more at http://dev.w3.org/html5/markup/meta.name.html
-response.meta.author = 'Your Name <you@example.com>'
-response.meta.description = 'a cool new app'
-response.meta.keywords = 'web2py, python, framework'
+response.meta.author = 'Antioquia Calvary Chapel <antioquiacalvarychapel@hotmail.com>'
+response.meta.description = 'Iglesia cristiana en Hermosillo Sonora Mexico, Calvary Chapel, Pastor Ruben Muñoz Garcia'
+response.meta.keywords = 'iglesia, iglesia cristiana, hermosillo, calvary chapel, antioquia, ruben muñoz garcia'
 response.meta.generator = 'Web2py Web Framework'
 
 ## your http://google.com/analytics id
